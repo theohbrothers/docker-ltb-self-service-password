@@ -4,7 +4,7 @@ services:
 
 before_script:
   - date
-  #- echo "${DOCKER_REGISTRY_PASSWORD}" | docker login -u "${DOCKER_REGISTRY_USER}" --password-stdin
+  - echo "${DOCKER_REGISTRY_PASSWORD}" | docker login -u "${DOCKER_REGISTRY_USER}" --password-stdin
   - TRAVIS_REPO_SLUG=$( echo "$TRAVIS_REPO_SLUG" | awk '{print tolower($0)}' )
   - IMAGE_LATEST="$TRAVIS_REPO_SLUG:latest";
   - if [ -n "${TRAVIS_TAG}" ]; then
@@ -21,8 +21,8 @@ script:
   - docker history "${IMAGE}"
 
   # Push the image
-  #- travis_wait 30 docker push "${IMAGE}"
-  #- travis_wait 30 docker push "${IMAGE_LATEST}"
+  - travis_wait 30 docker push "${IMAGE}"
+  - travis_wait 30 docker push "${IMAGE_LATEST}"
   - date
 
 after_script:
