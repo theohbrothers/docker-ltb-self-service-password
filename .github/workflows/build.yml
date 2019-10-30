@@ -11,7 +11,7 @@ on:
     - '**'
 
 jobs:
-  build-curl:
+  build-docker-image:
     runs-on: ubuntu-18.04
     env:
       # TAG_WITH_VERSION: curl-${GITHUB_REF}
