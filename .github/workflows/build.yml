@@ -14,7 +14,7 @@ jobs:
   build-docker-image:
     runs-on: ubuntu-18.04
     env:
-      # TAG_WITH_VERSION: curl-${GITHUB_REF}
+      # TAG_WITH_VERSION: ${GITHUB_REF}
       BUILD_DIR: '.'
     steps:
     - uses: actions/checkout@v1
