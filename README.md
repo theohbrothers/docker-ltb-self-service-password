@@ -7,8 +7,7 @@ docker-ltb-self-service-password
 
 [![github-actions](https://github.com/theohbrothers/docker-ltb-self-service-password/workflows/build/badge.svg)](https://github.com/theohbrothers/docker-ltb-self-service-password/actions)
 [![github-tag](https://img.shields.io/github/tag/theohbrothers/docker-ltb-self-service-password)](https://github.com/theohbrothers/docker-ltb-self-service-password/releases/)
-[![docker-image-size](https://img.shields.io/microbadger/image-size/theohbrothers/docker-ltb-self-service-password/latest)](https://hub.docker.com/r/theohbrothers/docker-ltb-self-service-password)
-[![docker-image-layers](https://img.shields.io/microbadger/layers/theohbrothers/docker-ltb-self-service-password/latest)](https://hub.docker.com/r/theohbrothers/docker-ltb-self-service-password)
+[![docker-image-size](https://img.shields.io/docker/image-size/theohbrothers/docker-ltb-self-service-password/latest)](https://hub.docker.com/r/theohbrothers/docker-ltb-self-service-password)
 
 A dockerfile for the LDAP ToolBox (LTB) Self Service Password utility, which is a PHP application that allows users to change their password in an LDAP directory. See http://ltb-project.org/wiki/documentation/self-service-password
 
