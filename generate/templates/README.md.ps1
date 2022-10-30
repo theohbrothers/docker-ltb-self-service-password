@@ -1,3 +1,4 @@
+@'
 # docker-ltb-self-service-password
 
 <!--
@@ -91,3 +92,5 @@ Add this into `config.inc.php` to disable all certificate validation:
 ```php
 putenv('LDAPTLS_REQCERT=never');
 ```
+
+'@
