@@ -10,6 +10,10 @@
 
 A dockerfile for the LDAP ToolBox (LTB) Self Service Password utility, which is a PHP application that allows users to change their password in an LDAP directory. See http://ltb-project.org/wiki/documentation/self-service-password
 
+## Deprecation notice
+
+The [`ltb-project/self-service-password`](https://github.com/ltb-project/self-service-password/releases) provides docker images since `v1.4`. This repository provides a `v1.3` image only for legacy support.
+
 ## Quick Start
 
 You can either run the image and link it to an external configuration file, or you can rebuild your own standalone image.
