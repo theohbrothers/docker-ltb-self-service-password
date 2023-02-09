@@ -1,16 +1,39 @@
-@'
+@"
 # docker-ltb-self-service-password
 
 <!--
 [![Build Status](https://travis-ci.org/theohbrothers/docker-LTB-self-service-password.svg?branch=master)](https://travis-ci.org/theohbrothers/docker-LTB-self-service-password)
 -->
 
-[![github-actions](https://github.com/theohbrothers/docker-ltb-self-service-password/workflows/build/badge.svg)](https://github.com/theohbrothers/docker-ltb-self-service-password/actions)
+[![github-actions](https://github.com/theohbrothers/docker-ltb-self-service-password/workflows/ci-master-pr/badge.svg)](https://github.com/theohbrothers/docker-ltb-self-service-password/actions)
 [![github-release](https://img.shields.io/github/v/release/theohbrothers/docker-ltb-self-service-password?style=flat-square)](https://github.com/theohbrothers/docker-ltb-self-service-password/releases/)
 [![docker-image-size](https://img.shields.io/docker/image-size/theohbrothers/docker-ltb-self-service-password/latest)](https://hub.docker.com/r/theohbrothers/docker-ltb-self-service-password)
 
 A dockerfile for the LDAP ToolBox (LTB) Self Service Password utility, which is a PHP application that allows users to change their password in an LDAP directory. See http://ltb-project.org/wiki/documentation/self-service-password
 
+## Tags
+
+| Tag | Dockerfile Build Context |
+|:-------:|:---------:|
+$(
+($VARIANTS | % {
+    if ( $_['tag_as_latest'] ) {
+@"
+| ``:$( $_['tag'] )``, ``:latest`` | [View](variants/$( $_['tag'] )) |
+
+"@
+    }else {
+@"
+| ``:$( $_['tag'] )`` | [View](variants/$( $_['tag'] )) |
+
+"@
+    }
+}) -join ''
+)
+
+"@
+
+@'
 ## Deprecation notice
 
 The [`ltb-project/self-service-password`](https://github.com/ltb-project/self-service-password/releases) provides docker images since `v1.4`. This repository provides a `v1.3` image only for legacy support.
