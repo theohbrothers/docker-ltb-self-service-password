@@ -14,7 +14,7 @@ A dockerfile for the LDAP ToolBox (LTB) Self Service Password utility, which is 
 
 | Tag | Dockerfile Build Context |
 |:-------:|:---------:|
-| `:v1.3`, `:latest` | [View](variants/v1.3) |
+| `:1.3`, `:latest` | [View](variants/1.3) |
 
 ## Deprecation notice
 
